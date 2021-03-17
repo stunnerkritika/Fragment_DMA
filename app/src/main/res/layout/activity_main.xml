@@ -67,5 +67,12 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout="@layout/fragment_simplefragment" />
+    <fragment
+        android:id="@+id/fragment_rating"
+        android:name="com.example.android.fragmentexample.StarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/fragment"
+        tools:layout="@layout/fragment_star" />
 
 </android.support.constraint.ConstraintLayout>
