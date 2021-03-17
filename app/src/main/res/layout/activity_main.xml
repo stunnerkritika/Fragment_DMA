@@ -14,12 +14,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/image_left_margin"
-        android:layout_marginStart="@dimen/image_left_margin"
         android:layout_marginTop="@dimen/body_top_margin"
         android:scaleType="centerCrop"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/beatles_anthology_box"/>
+        app:srcCompat="@drawable/beatles_anthology_box" />
 
     <TextView
         android:id="@+id/title"
@@ -58,14 +57,23 @@
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="288dp"/>
     </ScrollView>
-    <fragment
-        android:id="@+id/fragment"
-        android:name="com.example.android.fragmentexample.simplefragment"
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:name="com.example.android.fragmentexample.SimpleFragement"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout="@layout/fragment_simplefragment" />
+
+    <Button
+        android:id="@+id/open_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/open"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="21dp" />
 
 </android.support.constraint.ConstraintLayout>
